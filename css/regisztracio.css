@@ -1,0 +1,261 @@
+body {
+    background-color: rgb(236, 233, 233);
+}
+
+* {
+    font-family: "Playfair Display", serif;
+}
+
+.focim {
+    margin-top: 60px;
+}
+
+.kontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+}
+
+.udvozoljuk {
+    border: 1px solid black;
+    width: 40%;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../images/raktar.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.beregisztralni {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 40%;
+    box-shadow: 0 0 10px rgb(216, 213, 213);
+    border-radius: 5px;
+}
+
+.text {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.bemenet {
+    display: flex;
+    flex-direction: column;
+}
+
+.beregisztralni {
+    height: 800px;
+}
+
+.beregisztralni input {
+    margin: 10px 0;
+    border: 1px solid black;
+    padding: 5px 10px;
+    height: 30px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.beregisztralni button {
+    background-color: rgb(7, 7, 7);
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    height: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.beregisztralni button:hover {
+    transform: translateY(-5px);
+}
+
+.elonyok {
+    margin-top: 70px;
+    width: 80%;
+    text-align: center;
+}
+
+.elonyok li {
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    list-style: none;
+    text-decoration: underline;
+    
+}
+
+.kontainer1 {
+    background-color: black;
+    height: 500px;
+    display: flex;
+}
+
+.box {
+    width: 49%;
+}
+
+.media h1,
+.kontakt {
+    color: white;
+}
+
+.media {
+    margin-top: 100px;
+    margin-left: 178px;
+    display: flex;
+    flex-direction: column;
+}
+
+.media a {
+    text-decoration: none;
+    color: white;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.fa {
+    font-size: 35px;
+}
+
+.media i {
+    margin: 0 15px;
+}
+
+.kontakt {
+    margin-top: 120px;
+    margin-left: 178px;
+}
+
+.kontakt h2 {
+    font-size: 2rem;
+}
+
+.kontakt h3 {
+    font-size: 1.5rem;
+}
+
+.kontakt p {
+    line-height: 1.7px;
+    font-size: 1.2rem;
+}
+
+.kontainer2 {
+    background-color: black;
+}
+
+
+@media screen and (max-width:1289px) {
+
+    .kontainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .udvozoljuk {
+        width: 100%;
+        min-height: 40vh;
+        background-position: center;
+    }
+
+    .elonyok {
+        width: 100%;
+        text-align: center;
+    }
+
+    .beregisztralni {
+        width: 100%;
+    }
+
+    .elonyok {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:863px) {
+
+    .media,
+    .kontakt {
+        margin-left: 0px;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .kontainer1 {
+        height: 100%;
+        padding: 20px 0;
+    }
+
+    .kontakt h2,
+    .media h1 {
+        font-size: 4vw;
+    }
+
+    .kontakt h3 {
+        font-size: 3vw;
+    }
+
+    .kontakt p {
+        font-size: 2.5vw;
+    }
+
+    .media a,
+    .fa {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width:593px) {
+
+    .kontainer1 {
+        flex-direction: column;
+    }
+
+    .kontakt h2,
+    .media h1 {
+        font-size: 1.8rem;
+    }
+
+    .kontakt h3 {
+        font-size: 1.3rem
+    }
+
+    .kontakt p {
+        font-size: 1rem;
+    }
+
+    .media a,
+    .fa {
+        font-size: 1.5rem;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .text h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .beregisztralni {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .beregisztralni input {
+        width: 220px;
+    }
+}
