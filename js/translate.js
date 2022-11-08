@@ -7,8 +7,8 @@ let szolgaltatas = document.querySelector('.fo_szolgaltatas');
 let termekek = document.querySelector('.fo_termekek');
 let blog = document.querySelector('.fo_blog');
 let kapcsolatok = document.querySelector('.fo_kapcsolatok');
-//let bejelentkezes = document.querySelector('.fo_bejelentkezes');
-//let regisztracio = document.querySelector('.fo_regisztracio');
+let bejelentkezes = document.querySelector('.fo_bejelentkezes');
+let regisztracio = document.querySelector('.fo_regisztracio');
 
 let tuzoltoruha = document.querySelector('.fo_tuzoltoruha');
 let munkaruha = document.querySelector('.fo_munkaruha');
@@ -16,11 +16,15 @@ let orvosiruha = document.querySelector('.fo_orvosiruha');
 let tozoltoleiras = document.querySelector('.fo_tuzleiras');
 let munkaleiras = document.querySelector('.fo_munleiras');
 let orvosleiras = document.querySelector('.fo_orvleiras');
+let termekekre = document.querySelector('.fo_termekekre');
+let termekekre1 = document.querySelector('.fo_termekekre1');
+let termekekre2 = document.querySelector('.fo_termekekre2');
 
 let rolunkresz = document.querySelector('.fo_rolunkresz');
 let tudjonmeg = document.querySelector('.fo_tudjonmeg');
 let rolunktext1 = document.querySelector('.fo_rolunktext1');
 let rolunktext2 = document.querySelector('.fo_rolunktext2');
+let tovabb = document.querySelector('.fo_tovabb');
 
 let ismerjek = document.querySelector('.fo_ismerjek');
 let bizunk = document.querySelector('.fo_bizunk');
@@ -59,6 +63,9 @@ let hirektext = document.querySelector('.fo_hirektext');
 let koltozes = document.querySelector('.fo_koltozes');
 let tervezesruha = document.querySelector('.fo_tervezesruha');
 let automatizalas = document.querySelector('.fo_automatizalas');
+let hirre = document.querySelector('.fo_hirre');
+let hirre1 = document.querySelector('.fo_hirre1');
+let hirre2 = document.querySelector('.fo_hirre2');
 let koltozesaltext = document.querySelector('.fo_koltozesaltext');
 let tervezesruhaaltext = document.querySelector('.fo_tervezesaltext');
 let automatizalasaltext = document.querySelector('.fo_automatizalasaltext');
@@ -74,6 +81,10 @@ let nyitvatartas = document.querySelector('.fo_nyitvatartas');
 let hetfopent = document.querySelector('.fo_hetpen');
 let szomvas = document.querySelector('.fo_szomvas');
 let hakerdes = document.querySelector('.fo_hakerdes');
+let bekuldes = document.querySelector('.fo_bekuldes');
+
+let adatvedelem = document.querySelector('.fo_adatvedelem');
+let sutik = document.querySelector('.fo_sutik');
 
 link.forEach(el => {
     el.addEventListener('click', () => {
@@ -87,6 +98,8 @@ link.forEach(el => {
         termekek.textContent = forditas[attr].termekek;
         blog.textContent = forditas[attr].blog;
         kapcsolatok.textContent = forditas[attr].kapcsolatok;
+        bejelentkezes.textContent = forditas[attr].bejelentkezes;
+        regisztracio.textContent = forditas[attr].regisztracio;
 
         tuzoltoruha.textContent = forditas[attr].tuzoltoruha;
         munkaruha.textContent = forditas[attr].munkaruha;
@@ -94,11 +107,15 @@ link.forEach(el => {
         tozoltoleiras.textContent = forditas[attr].tozoltoleiras;
         munkaleiras.textContent = forditas[attr].munkaleiras;
         orvosleiras.textContent = forditas[attr].orvosleiras;
+        termekekre.textContent = forditas[attr].termekekre;
+        termekekre1.textContent = forditas[attr].termekekre1;
+        termekekre2.textContent = forditas[attr].termekekre2;
 
         rolunkresz.textContent = forditas[attr].rolunkresz;
         tudjonmeg.textContent = forditas[attr].tudjonmeg;
         rolunktext1.textContent = forditas[attr].rolunktext1;
         rolunktext2.textContent = forditas[attr].rolunktext2;
+        tovabb.textContent = forditas[attr].tovabb;
 
         ismerjek.textContent = forditas[attr].ismerjek;
         bizunk.textContent = forditas[attr].bizunk;
@@ -137,6 +154,9 @@ link.forEach(el => {
         koltozes.textContent = forditas[attr].koltozes;
         tervezesruha.textContent = forditas[attr].tervezesruha;
         automatizalas.textContent = forditas[attr].automatizalas;
+        hirre.textContent = forditas[attr].hirre;
+        hirre1.textContent = forditas[attr].hirre1;
+        hirre2.textContent = forditas[attr].hirre2;
         koltozesaltext.textContent = forditas[attr].koltozesaltext;
         tervezesruhaaltext.textContent = forditas[attr].tervezesruhaaltext;
         automatizalasaltext.textContent = forditas[attr].automatizalasaltext;
@@ -152,6 +172,10 @@ link.forEach(el => {
         hetfopent.textContent = forditas[attr].hetfopent;
         szomvas.textContent = forditas[attr].szomvas;
         hakerdes.textContent = forditas[attr].hakerdes;
+        bekuldes.textContent = forditas[attr].bekuldes;
+
+        adatvedelem.textContent = forditas[attr].adatvedelem;
+        sutik.textContent = forditas[attr].sutik;
     })
 })
 
@@ -164,8 +188,8 @@ let forditas = {
         "termekek" : "Termékek",
         "blog" : "Blog",
         "kapcsolatok" : "Kapcsolatok",
-        "Bejelentkezés" : "Bejelentkezés",
-        "Regisztráció" : "Regisztráció",
+        "bejelentkezes" : "Bejelentkezés",
+        "regisztracio" : "Regisztráció",
         /**/
         "tuzoltoruha" : "Tűzoltóruhák",
         "munkaruha" : "Munkaruhák",
@@ -173,11 +197,15 @@ let forditas = {
         "tozoltoleiras" : "Nehéz és könnyű bevetési és gyakorlóruhák",
         "munkaleiras" : "Munkaruhák több iparágra és többféle termékek",
         "orvosleiras" : "Orvosi köppenyek nadrágok, nővérruhák",
+        "termekekre" : "Termékekre",
+        "termekekre1" : "Termékekre",
+        "termekekre2" : "Termékekre",
         /**/
         "rolunkresz" : "Rólunk",
         "tudjonmeg" : "Tudjon meg többet cégünkről",
         "rolunktext1" : "A Linditex Kft -t 2005- ben alapítottuk Vezekényen, Szlovákiában. Először Lindi néven futott a cég, majd 2018-ban lett Linditex Kft. A Lindi eleinte babaruhák gyártásával foglalkozott, de a piaci kereslet hiányában és a válság beköszöntével amely 2007-ben következett be, kénytelenek voltunk irányt váltani,és munkaruhák varrásába kezdeni.A hely, amely rendelkezésünkre állt az először 120 négyzetméternyi terület volt. Ezen a helyen próbáltuk a tőlünk telhető legjobb minőséget nyújtani az ügyfeleinknek. ",           
         "rolunktext2" : "2017-ben a céghez csatlakoztak a cégalapítók fiai is, és a cég vezetősége új irányelvet vett fel.Szerettek volna nagyobb ügyfélkört kiszolgálni.Az új irányelv sikeresnek bizonyult, amely egy felismeréshez vezetett, mégpedig,hogy az akkori helyiség kicsinek bizonyult. Majd 2017- ben a cég beköltözött egy 400 négyzetméteres helyiségbe. Több új terméket is kifejlesztettünk a saját védjegyünk alatt. Ezzel az új irányelvvel szeretnénk még több minőségi ruhát készíteni a leendő ügyfeleink számára.",
+        "tovabb" : "Tovább",
         /**/
         "ismerjek" : "Ismerjék meg SZOLGÁLLTATÁSAINKAT",
         "bizunk" : "Bízunk benne, hogy nálunk megtalálja számítását.",
@@ -216,10 +244,13 @@ let forditas = {
         "koltozes" : "Költözés új helyiségbe.",
         "tervezesruha" : "Gyakorló ruha megtervezése.",
         "automatizalas" : "Varrási automatizálás.",
+        "hirre" : "Hírre",
+        "hirre1" : "Hírek",
+        "hirre2" : "Hírek",
         "koltozesaltext" : "Új helyiség, újabb lehetőségek.",
         "tervezesruhaaltext" : "Új termék az önkéntes tűzoltóknak.",
         "automatizalasaltext" : "Megpróbálunk új szintre lépni.",
-         /**/
+        /**/
         "kapcsolatoklablec" : "Kapcsolatok",
         "kapcsolatoklablecalcim" : "Szívesen segítünk önnek",
         "szekhely" : "A cég székhelye",
@@ -231,6 +262,10 @@ let forditas = {
         "hetfopent" : "Hétfő-Péntek: 7:00-15:30",
         "szomvas" : "Szombat-Vasárnap: Zárva",
         "hakerdes" : "Ha kérdése lenne, kérem írjon nekünk",
+        "bekuldes" : "Beküldés",
+        /**/
+        "adatvedelem" : "Adatvédelem",
+        "sutik" : "Sütik",
        
     },
     "szlovak" : 
@@ -241,8 +276,8 @@ let forditas = {
         "termekek" : "Produkty",
         "blog" : "Blog",
         "kapcsolatok" : "Kontakty",
-        "Bejelentkezés" : "Prihlásenie",
-        "Regisztráció" : "Registrácia",
+        "bejelentkezes" : "Prihlásenie",
+        "regisztracio" : "Registrácia",
         /**/
         "tuzoltoruha" : "Hasičské oblečenie",
         "munkaruha" : "Pracovné oblečenie",
@@ -250,11 +285,15 @@ let forditas = {
         "tozoltoleiras" : "Ťažké a ľahké zásahové oblečenie",
         "munkaleiras" : "Pracovné oblečenie pre rôzné odvetvie",
         "orvosleiras" : "Sesterské oblečenie, nohavice, bundy",
+        "termekekre" : "Produkty",
+        "termekekre1" : "Produkty",
+        "termekekre2" : "Produkty",
         /**/
         "rolunkresz" : "O nás",
         "tudjonmeg" : "Dozveďte si viac o nás",
         "rolunktext1" : "Naša firma Linditex s.r.o. bola založená v roku 2005 v dedine Vozokany na Slovensku, najprv pod menom Lindi, od roku 2018 funguje pod názvom Linditex s.r.o. Na začiatku naša firma sa venovala šitiu dojčenského oblečenia, ale kvôli ekonomickej kríze v roku 2007 a kvôli nedostatku dopytu na trhu sme museli zmeniť náš profil a začínali sme so šitím pracovného oblečenia. Naša prvá výrobná hala bola 120 m2 veľká miestnosť, odkiaľ sme sa snažili dodať našim klientom čo najvyššiu kvalitu.  ",           
         "rolunktext2" : "V roku 2017 sa k firme pripojili synovia zakladateľov a vedenie firmy sa presmerovala na nový koncept. Chceli sme slúžiť väčšej klientele, preto sme si uvedomili, že potrebujeme väčšiu výrobnú halu. V tom istom roku sa naša spoločnosť  presídlila do novej 400 m2-vej budovy. Vyvíjali sme viac nových produktov pod našou ochrannou známkou. Našim zámerom je vytvoriť ešte viac kvalitných šiat pre našich budúcich zákazníkov.    ",
+        "tovabb" : "Ďalej",
         /**/
         "ismerjek" : "Spoznajte naše SLUŽBY",
         "bizunk" : "Dúfame, že u nás nájdete svoju kalkuláciu.",
@@ -293,6 +332,9 @@ let forditas = {
         "koltozes" : "Sťahovanie do novej miestnosti.",
         "tervezesruha" : "Navrhovanie cvičebných odevov.",
         "automatizalas" : "Automatizácia šitia.",
+        "hirre" : "Ďalej",
+        "hirre1" : "Ďalej",
+        "hirre2" : "Ďalej",
         "koltozesaltext" : "Nová miestnosť, nové možnosti.",
         "tervezesruhaaltext" : "Nový produkt pre dobrovoľných hasičov.",
         "automatizalasaltext" : "Snažíme sa dosiahnuť novú úroveň.",
@@ -308,6 +350,10 @@ let forditas = {
         "hetfopent" : "Pondelok až piatok: 7:00 - 15:30",
         "szomvas" : "Sobota-nedeľa: zatvorené",
         "hakerdes" : "Ak máte nejaké otázky, napíšte nám",
+        "bekuldes" : "Odoslať",
+        /**/
+        "adatvedelem" : "Ochrana dát",
+        "sutik" : "Cookies",
 
     },
     "nemet" : 
@@ -318,8 +364,8 @@ let forditas = {
         "termekek" : "Produkte",
         "blog" : "Blog",
         "kapcsolatok" : "Beziehungen",
-        "Bejelentkezés" : "Anmeldung",
-        "Regisztráció" : "Registrierung",
+        "bejelentkezes" : "Anmeldung",
+        "regisztracio" : "Registrierung",
          /**/
          "tuzoltoruha" : "Feuerwehrkleidung",
          "munkaruha" : "Arbeitskleidung",
@@ -327,11 +373,15 @@ let forditas = {
          "tozoltoleiras" : "Schwere und leichte Notfallkleidung",
          "munkaleiras" : "Arbeitskleidung für verschiedene Branchen",
          "orvosleiras" : "Stillkleidung, Hosen, Jacken",
+         "termekekre" : "Produkte",
+         "termekekre1" : "Produkte",
+         "termekekre2" : "Produkte",
          /**/
         "rolunkresz" : "Über uns",
         "tudjonmeg" : "lerne mehr über uns",
         "rolunktext1" : "Linditex GmbH wurde im 2005 in der Slowakei, im Dorf Vozokany gegründet. Am Anfang die Firma trug den Namen Lindi, nur ab 2018 wurde sie als Linditex Gmbh benennt. Die Firma hat sich zuerst mit dem Nähen von Babybekleidung beschäftigt, aber wegen der fehlenden Marktnachfrage und der ökonomischen Weltkrisis im 2007 mussten wir eine neue Konzeption herausfinden und begonnen wir mit dem Nähen der Arbeitsbekleidungen. Unsere Werkstatt befand sich am Anfang in einem Raum mit Größe von 120m2, wovon wir die beste Qualität für unseren Kunden bieten versuchten.   ",           
         "rolunktext2" : "Im 2017 sind auch die Söhne des Begründers in die Firma hineingetreten, und die Leitung hat eine neue Konzeption angenommen. Wir wollten einen größeren Kundenkreis bedienen. Die neue Konzeption schien erfolgreich zu sein, die zu einer neuen Erkenntnis kam, dass wir größeren Produktionsraum brauchten. Im 2017 hat sich die Firma in einen 400m2 großen Produktionsraum umgezogen, Wir haben auch mehreren neuen Produkten unter unserer Schutzmarke entwickelt. Wir möchten mit dieser neuen Konzeption in der Zukunft noch weitere Mengen von qualitätsvollen Bekleidungen für unseren zukünftigen Kunden anfertigen. ",
+        "tovabb" : "Weiter",
         /**/
         "ismerjek" : "Lernen Sie unsere LEISTUNGEN kennen",
         "bizunk" : "Wir hoffen, dass Sie Ihre Kalkulation bei uns finden.",
@@ -370,6 +420,9 @@ let forditas = {
         "koltozes" : "Umzug in einen neuen Raum.",
         "tervezesruha" : "Übungskleidung gestalten.",
         "automatizalas" : "Nähautomation.",
+        "hirre" : "Weiter",
+        "hirre1" : "Weiter",
+        "hirre2" : "Weiter",
         "koltozesaltext" : "Neuer Raum, neue Möglichkeiten.",
         "tervezesruhaaltext" : "Ein neues Produkt für freiwillige Feuerwehrleute.",
         "automatizalasaltext" : "Wir versuchen, ein neues Level zu erreichen.",
@@ -385,6 +438,10 @@ let forditas = {
         "hetfopent" : "Montag bis Freitag: 7:00 - 15:30 Uhr",
         "szomvas" : "Samstag-Sonntag: geschlossen",
         "hakerdes" : "Wenn Sie Fragen haben, schreiben Sie uns bitte",
+        "bekuldes" : "Senden",
+        /**/
+        "adatvedelem" : "Datenschutz",
+        "sutik" : "Cookies",
 
     },
     "angol" : 
@@ -395,8 +452,8 @@ let forditas = {
         "termekek" : "Producte",
         "blog" : "Blog",
         "kapcsolatok" : "Contacts",
-        "Bejelentkezés" : "Login",
-        "Regisztráció" : "Registration",
+        "bejelentkezes" : "Login",
+        "regisztracio" : "Registration",
          /**/
          "tuzoltoruha" : "Firefighter's clothing",
          "munkaruha" : "Work clothes",
@@ -404,11 +461,15 @@ let forditas = {
          "tozoltoleiras" : "Heavy and light emergency clothing",
          "munkaleiras" : "Work clothes for different industries",
          "orvosleiras" : "Nursing clothes, pants, jackets",
+         "termekekre" : "Products",
+         "termekekre1" : "Products",
+         "termekekre2" : "Products",
          /**/
         "rolunkresz" : "About us",
         "tudjonmeg" : "Learn more about us",
         "rolunktext1" : "Our company Linditex Ltd. was established in Slovakia in a village called Vozokany.  At the beginning the company was named as Lindi, from 2018 as Linditex Ltd. We produced at first baby clothing , but due to the financial crisis in 2007 and lack of demand on the market we had to change our profile to production of dungarees.  Our production hall was 120 m2 large that time, from that place we were trying to do our best to offer a high quality service for our clients. ",           
         "rolunktext2" : "In 2017 the sons of the establishers had joined to the management of the company,and they aimed new goals. They wanted to serve a larger clientele. They were succesful and within a short time they had realized that they needed a new, bigger production hall. In 2017 the company moved to a new 400 m2 large building. We have created from that time many new products under our brand’s name. We would like to continue this way and produce even more high quality clothing. ",
+        "tovabb" : "Go on",
         /**/
         "ismerjek" : "Get to know our SERVICES",
         "bizunk" : "We hope that you will find your calculation with us.",
@@ -447,6 +508,9 @@ let forditas = {
         "koltozes" : "Moving to a new room.",
         "tervezesruha" : "Designing practice clothes.",
         "automatizalas" : "Sewing automation.",
+        "hirre" : "Next",
+        "hirre1" : "Next",
+        "hirre2" : "Next",
         "koltozesaltext" : "New space, new possibilities.",
         "tervezesruhaaltext" : "A new product for volunteer firefighters.",
         "automatizalasaltext" : "We are trying to reach a new level.",
@@ -462,5 +526,9 @@ let forditas = {
         "hetfopent" : "Monday to Friday: 7:00 a.m. - 3:30 p.m",
         "szomvas" : "Saturday-Sunday: closed",
         "hakerdes" : "If you have any questions, please write to us",
+        "bekuldes" : "Send",
+        /**/
+        "adatvedelem" : "data security",
+        "sutik" : "Cookies",
     },
 }

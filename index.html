@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Linditex varroda</title>
+    <title>Linditex</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -93,21 +93,21 @@
             <div class="containers">
                 <h1 class="fo_tuzoltoruha">Tűzoltóruhák</h1>
                 <h4 class="fo_tuzleiras">Nehéz és könnyű bevetési és gyakorlóruhák</h4>
-                <a class="forgotar_gomb" href="#termekek">Termékekre</a>
+                <a class="forgotar_gomb fo_termekekre" href="#termekek">Termékekre</a>
             </div>
           </div>
           <div class="carousel-item" style="background-image:url(./images/munka.jpg) ;">
             <div class="containers">
                 <h2 class="fo_munkaruha">Munkaruhák</h2>
                 <h4 class="fo_munleiras">Munkaruhák több iparágra és többféle termékek</h4>
-                <a class="forgotar_gomb" href="#termekek">Termékekre</a>
+                <a class="forgotar_gomb fo_termekekre1" href="#termekek">Termékekre</a>
             </div>
           </div>
           <div class="carousel-item" style="background-image:url(./images/orvos.jpg) ;">
             <div class="containers">
                 <h2 class="fo_orvosiruha">Orvosi ruhák</h2>
                 <h4 class="fo_orvleiras">Orvosi köppenyek nadrágok, nővérruhák</h4>
-                <a class="forgotar_gomb" href="#termekek">Termékekre</a>
+                <a class="forgotar_gomb fo_termekekre2" href="#termekek">Termékekre</a>
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@
                 <div class="mediabox row mx-auto m-sm-auto">
                     <div class="kozepre col-lg-4 col-sm-auto">
                         <div class="tovabbgomb">
-                            <a href="#blog">Tovább</a>
+                            <a class="fo_tovabb" href="#blog">TOVÁBB</a>
                         </div>
                     </div>
                     <div class="col-lg-8 my-lg-auto col-sm-auto">
@@ -389,7 +389,7 @@
                                 <h4 class="fo_koltozesaltext">
                                     Új helyiség, újabb lehetőségek.
                                 </h4>
-                                <a  class="button" target="_blank" href="./blog.html">TOVÁBBOLVASOM</a>
+                                <a  class="button fo_hirre" target="_blank" href="./blog.html">Hírre</a>
                             
                             </div>
                         </div>
@@ -405,7 +405,7 @@
                                 <h4 class="fo_tervezesaltext">
                                     Új termék az önkéntes tűzoltóknak. 
                                 </h4>
-                                <a id="meg_nem_munkodik" target="_blank" class="button" href="./blog.html">TOVÁBBOLVASOM</a>
+                                <a class="button fo_hirre1" id="meg_nem_munkodik" target="_blank"  href="./blog.html">Hírre</a>
                             </div>
                         </div>
                     </div>
@@ -420,7 +420,7 @@
                                 <h4 class="fo_automatizalasaltext">
                                     Megpróbálunk új szintre lépni.
                                 </h4>
-                                <a  class="button" target="_blank" href="./blog.html">TOVÁBBOLVASOM</a>
+                                <a  class="button fo_hirre2" target="_blank" href="./blog.html">Hírre</a>
                             </div>
                         </div>
                     </div>
@@ -472,8 +472,9 @@
                             <ul class="also">
                                 <li class="vastag fo_telefonoselerh">Telefonos elérhetőségek:</li>
                                 <li>Tel. +421 911 297 305</li>
-                                <li>Tel. +421 911 277 305</li>
-                                <li> Mail: lindi@lindi.sk</li>
+                                <li>Tel. +421 911 270 377</li>
+                                <li> Mail: attilaszabo@linditex.eu</li>
+                                <li> Mail: akosszabo@linditex.eu</li>
                             </ul>
                             <ul>
                                 <li class="fo_nyitvatartas"> A cég nyitvatartása:</li>
@@ -519,8 +520,8 @@
                                 rows="10"></textarea>
                             </div>
                             <div class="box4">
-                                <input 
-                                type="submit" value="Beküldés">
+                            <button class="fo_bekuldes" type ="submit">Beküldés</button>
+                                
                             </div>
                         </form>
                     </div>
@@ -529,8 +530,8 @@
         </div>
         <div class="corporation">
             <h6>&copy; 2022 Linditex s.r.o.</h6>
-            <a target="_blank" href="https://officina.hu/gazdasag/183-adatkezelesi-adatvedelmi-szabalyzat-2018-minta-gdpr"><h6>Adatvédelem</h6></a>
-            <a target="blank" href="https://support.mozilla.org/hu/kb/sutik-informacio-amelyet-weboldalak-tarolnak-szami"><h6>Sütik</h6></a>
+            <a target="_blank" href="https://officina.hu/gazdasag/183-adatkezelesi-adatvedelmi-szabalyzat-2018-minta-gdpr"><h6 class="fo_adatvedelem">Adatvédelem</h6></a>
+            <a target="blank" href="https://support.mozilla.org/hu/kb/sutik-informacio-amelyet-weboldalak-tarolnak-szami"><h6 class="fo_sutik">Sütik</h6></a>
         </div>
     </footer>
     <!-- Kontakt rész eddig -->
