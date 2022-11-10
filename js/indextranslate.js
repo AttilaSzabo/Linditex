@@ -9,6 +9,9 @@ let blog = document.querySelector('.fo_blog');
 let kapcsolatok = document.querySelector('.fo_kapcsolatok');
 let bejelentkezes = document.querySelector('.fo_bejelentkezes');
 let regisztracio = document.querySelector('.fo_regisztracio');
+let felhasznalonev = document.querySelector('.fo_felhasznalonev');
+let jelszo = document.querySelector('.fo_jelszo');
+
 
 let tuzoltoruha = document.querySelector('.fo_tuzoltoruha');
 let munkaruha = document.querySelector('.fo_munkaruha');
@@ -82,9 +85,29 @@ let hetfopent = document.querySelector('.fo_hetpen');
 let szomvas = document.querySelector('.fo_szomvas');
 let hakerdes = document.querySelector('.fo_hakerdes');
 let bekuldes = document.querySelector('.fo_bekuldes');
+let teljesnev = document.querySelector('.fo_teljesnev');
+let email = document.querySelector('.fo_email');
+let cegnev = document.querySelector('.fo_cegnev');
+let telefonszam = document.querySelector('.fo_telefonszam');
+let uzenet = document.querySelector('.fo_uzenet');
 
 let adatvedelem = document.querySelector('.fo_adatvedelem');
 let sutik = document.querySelector('.fo_sutik');
+
+/*  A regisztrációs rész  */
+
+let regisztraljon = document.querySelector('.fo_regisztraljon');
+let beregisztralni = document.querySelector('.fo_beregisztralni');
+let milyenelonyok = document.querySelector('.fo_milyenelonyok');
+let beallithatja = document.querySelector('.fo_beallithatja');
+let figyelemmel = document.querySelector('.fo_figyelemmel');
+let idoben = document.querySelector('.fo_idoben');
+let gyors = document.querySelector('.fo_gyors');
+let kozossegunk = document.querySelector('.fo_legyenkozossegunk');
+let regsiztrkapcsolat = document.querySelector('.fo_regisztrkapcsolat');
+let postai = document.querySelector('.fo_regisztrposta');
+let telefonos = document.querySelector('.fo_telefonos');
+
 
 link.forEach(el => {
     el.addEventListener('click', () => {
@@ -100,6 +123,8 @@ link.forEach(el => {
         kapcsolatok.textContent = forditas[attr].kapcsolatok;
         bejelentkezes.textContent = forditas[attr].bejelentkezes;
         regisztracio.textContent = forditas[attr].regisztracio;
+        felhasznalonev.placeholder = forditas[attr].felhasznalonev;
+        jelszo.placeholder = forditas[attr].jelszo;
 
         tuzoltoruha.textContent = forditas[attr].tuzoltoruha;
         munkaruha.textContent = forditas[attr].munkaruha;
@@ -173,9 +198,26 @@ link.forEach(el => {
         szomvas.textContent = forditas[attr].szomvas;
         hakerdes.textContent = forditas[attr].hakerdes;
         bekuldes.textContent = forditas[attr].bekuldes;
+        teljesnev.placeholder = forditas[attr].teljesnev;
+        email.placeholder = forditas[attr].email;
+        cegnev.placeholder = forditas[attr].cegnev;
+        telefonszam.placeholder = forditas[attr].telefonszam;
+        uzenet.placeholder = forditas[attr].uzenet;
 
         adatvedelem.textContent = forditas[attr].adatvedelem;
         sutik.textContent = forditas[attr].sutik;
+
+        regisztraljon.textContent = forditas[attr].regisztraljon;
+        beregisztralni.textContent = forditas[attr].beregisztralni;
+        milyenelonyok.textContent = forditas[attr].milyenelonyok;
+        beallithatja.textContent = forditas[attr].beallithatja;
+        figyelemmel.textContent = forditas[attr].figyelemmel;
+        idoben.textContent = forditas[attr].idoben;
+        gyors.textContent = forditas[attr].gyors;
+        kozossegunk.textContent = forditas[attr].kozossegunk;
+        regsiztrkapcsolat.textContent = forditas[attr].regsiztrkapcsolat;
+        postai.textContent = forditas[attr].postai;
+        telefonos.textContent = forditas[attr].telefonos;
     })
 })
 
@@ -190,6 +232,8 @@ let forditas = {
         "kapcsolatok" : "Kapcsolatok",
         "bejelentkezes" : "Bejelentkezés",
         "regisztracio" : "Regisztráció",
+        "felhasznalonev" : "Felhasználónév",
+        "jelszo" : "Jelszó",
         /**/
         "tuzoltoruha" : "Tűzoltóruhák",
         "munkaruha" : "Munkaruhák",
@@ -263,10 +307,27 @@ let forditas = {
         "szomvas" : "Szombat-Vasárnap: Zárva",
         "hakerdes" : "Ha kérdése lenne, kérem írjon nekünk",
         "bekuldes" : "Beküldés",
+        "teljesnev" : "Teljes neve",
+        "email" : "E-mail",
+        "cegnev" : "Cégnév",
+        "telefonszam" : "Telefonszáma",
+        "uzenet" : "Üzenete",
         /**/
         "adatvedelem" : "Adatvédelem",
         "sutik" : "Sütik",
-       
+        /*  A regisztrációs rész  */
+        "regisztraljon" : "Regisztráljon be még ma.",
+        "beregisztralni" : "Beregisztálni",
+        "milyenelonyok" : "Hogy milyen előnyökhöz juthat?",
+        "beallithatja" : "Beállíthatja a raktárkészlet mennyiségét",
+        "figyelemmel" : "Figyelemmel követheti raktárkészletét",
+        "idoben" : "Időben értisíthet, hogyha szeretné raktárkészletét feltölteni",
+        "gyors" : "Gyors kiszállítás",
+        "kozossegunk" : "Legyen a közösségünk része.",
+        "regsiztrkapcsolat" : "Kapcsolatok",
+        "postai" : "Postai cím:",
+        "telefonos" : "Telefonos elérhetőségek:",
+        "teszt" : "jjfjfjfjf",
     },
     "szlovak" : 
     {
@@ -278,6 +339,8 @@ let forditas = {
         "kapcsolatok" : "Kontakty",
         "bejelentkezes" : "Prihlásenie",
         "regisztracio" : "Registrácia",
+        "felhasznalonev" : "Používateľské meno",
+        "jelszo" : "Heslo",
         /**/
         "tuzoltoruha" : "Hasičské oblečenie",
         "munkaruha" : "Pracovné oblečenie",
@@ -351,10 +414,27 @@ let forditas = {
         "szomvas" : "Sobota-nedeľa: zatvorené",
         "hakerdes" : "Ak máte nejaké otázky, napíšte nám",
         "bekuldes" : "Odoslať",
+        "teljesnev" : "Celé meno",
+        "email" : "Email",
+        "cegnev" : "Meno firmy",
+        "telefonszam" : "Vaše Tel.číslo",
+        "uzenet" : "Vaša správa",
         /**/
         "adatvedelem" : "Ochrana dát",
         "sutik" : "Cookies",
-
+        /*  A regisztrációs rész  */
+        "regisztraljon" : "Zaregistrujte sa ešte dnes.",
+        "beregisztralni" : "Zaregistrovať sa",
+        "milyenelonyok" : "Aké výhody môžete získať?",
+        "beallithatja" : "Môžete nastaviť množstvo na sklade",
+        "figyelemmel" : "Môžete sledovať svoj inventár",
+        "idoben" : "Môžete včas oznámiť, že chcete doplniť zásoby",
+        "gyors" : "Rýchla donáška",
+        "kozossegunk" : "Staňte sa súčasťou našej komunity.",
+        "regsiztrkapcsolat" : "Vzťahy",
+        "postai" : "Poštová adresa:",
+        "telefonos" : "Telefonické kontaktné údaje:",
+        "teszt" : "jjfjfjfjf",
     },
     "nemet" : 
     {
@@ -366,6 +446,8 @@ let forditas = {
         "kapcsolatok" : "Beziehungen",
         "bejelentkezes" : "Anmeldung",
         "regisztracio" : "Registrierung",
+        "felhasznalonev" : "Benutzername",
+        "jelszo" : "Passwort",
          /**/
          "tuzoltoruha" : "Feuerwehrkleidung",
          "munkaruha" : "Arbeitskleidung",
@@ -439,10 +521,27 @@ let forditas = {
         "szomvas" : "Samstag-Sonntag: geschlossen",
         "hakerdes" : "Wenn Sie Fragen haben, schreiben Sie uns bitte",
         "bekuldes" : "Senden",
+        "teljesnev" : "Vollständiger Name",
+        "email" : "Email",
+        "cegnev" : "Name der Firma",
+        "telefonszam" : "Deine Telefonnummer",
+        "uzenet" : "Ihre Nachricht",
         /**/
         "adatvedelem" : "Datenschutz",
         "sutik" : "Cookies",
-
+        /*  A regisztrációs rész  */
+        "regisztraljon" : "Registrieren Sie sich heute.",
+        "beregisztralni" : "Einloggen",
+        "milyenelonyok" : "Welche Vorteile können Sie erhalten?",
+        "beallithatja" : "Sie können die Menge auf Lager einstellen",
+        "figyelemmel" : "Sie können Ihr Inventar verfolgen",
+        "idoben" : "Sie können rechtzeitig ankündigen, dass Sie nachfüllen möchten",
+        "gyors" : "Schnelle Lieferung",
+        "kozossegunk" : "Werde Teil unserer Community.",
+        "regsiztrkapcsolat" : "Beziehungen",
+        "postai" : "Anschrift:",
+        "telefonos" : "Telefonische Kontaktdaten:",
+        "teszt" : "jjfjfjfjf",
     },
     "angol" : 
     {
@@ -454,6 +553,8 @@ let forditas = {
         "kapcsolatok" : "Contacts",
         "bejelentkezes" : "Login",
         "regisztracio" : "Registration",
+        "felhasznalonev" : "User name",
+        "jelszo" : "Password",
          /**/
          "tuzoltoruha" : "Firefighter's clothing",
          "munkaruha" : "Work clothes",
@@ -527,8 +628,25 @@ let forditas = {
         "szomvas" : "Saturday-Sunday: closed",
         "hakerdes" : "If you have any questions, please write to us",
         "bekuldes" : "Send",
+        "teljesnev" : "Full name",
+        "email" : "Email",
+        "cegnev" : "Name of the company",
+        "telefonszam" : "Your phone number",
+        "uzenet" : "Your message",
         /**/
         "adatvedelem" : "data security",
         "sutik" : "Cookies",
+        /*  A regisztrációs rész  */
+        "regisztraljon" : "Register today.",
+        "beregisztralni" : "log in",
+        "milyenelonyok" : "What benefits can you get?",
+        "beallithatja" : "You can set the quantity in stock",
+        "figyelemmel" : "You can track your inventory",
+        "idoben" : "You can announce in good time that you want to refill",
+        "gyors" : "Fast delivery",
+        "kozossegunk" : "Become part of our community.",
+        "regsiztrkapcsolat" : "Relationships",
+        "postai" : "Address:",
+        "telefonos" : "Telephone contact details:",
     },
 }
