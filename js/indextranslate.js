@@ -121,10 +121,10 @@ link.forEach(el => {
         termekek.textContent = forditas[attr].termekek;
         blog.textContent = forditas[attr].blog;
         kapcsolatok.textContent = forditas[attr].kapcsolatok;
-        bejelentkezes.textContent = forditas[attr].bejelentkezes;
-        regisztracio.textContent = forditas[attr].regisztracio;
-        felhasznalonev.placeholder = forditas[attr].felhasznalonev;
-        jelszo.placeholder = forditas[attr].jelszo;
+        //bejelentkezes.textContent = forditas[attr].bejelentkezes;
+        //regisztracio.textContent = forditas[attr].regisztracio;
+        //felhasznalonev.placeholder = forditas[attr].felhasznalonev;
+        //jelszo.placeholder = forditas[attr].jelszo;
 
         tuzoltoruha.textContent = forditas[attr].tuzoltoruha;
         munkaruha.textContent = forditas[attr].munkaruha;
